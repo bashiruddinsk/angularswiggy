@@ -10,4 +10,13 @@ export class Cart{
     });
     return totalPrice;
    }
+
+    // Calculate the total quantity of items in the cart
+  get totalQuantity(): number {
+    let totalQuantity = 0;
+    this.items.forEach(item => {
+      totalQuantity += item.quantity;
+    });
+    return totalQuantity;
+  }
 }

@@ -40,5 +40,6 @@ export class CartPageComponent implements OnInit {
       this.cartService.changeQuantity(cartItem.food.id,quantity);
       this.setCart();
     }
-
+      
+    
 }
