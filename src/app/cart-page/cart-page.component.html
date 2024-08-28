@@ -38,7 +38,7 @@ resetLinkText="Go to HomePage"></app-not-found>
               </div>
 
             <div>
-                {{cartItem.price | currency}}
+                {{cartItem.price | currency:'INR':'symbol':'1.2-2'}}
             </div>
 
             <div>
@@ -55,7 +55,7 @@ resetLinkText="Go to HomePage"></app-not-found>
         </div>
 
         <div class="total-price">
-            {{cart.totalPrice | currency}}
+            {{cart.totalPrice | currency:'INR':'symbol':'1.2-2'}}
         </div>
 
         <a routerLink="/checkout">Procced to checkout</a>
